@@ -1,0 +1,25 @@
+%YAML 1.2
+---
+question:
+  en: What's the name of this place?
+  de: Wie heißt der Ort?
+in_one_word: 
+  en: Name
+  de: Name
+icon: title # short_text
+possibleAnswers:
+  name:
+    inputtype: text
+    title: 
+      en: Name in the local language
+      de: Name in der Orts-Sprache
+    tags:
+      name: ''
+  'name:en':
+    inputtype: text
+    title: 
+      en: Name in English
+      de: Name in Englisch
+    tags:
+      'name:en': ''
+...

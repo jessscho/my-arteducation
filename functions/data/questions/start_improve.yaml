@@ -1,0 +1,91 @@
+%YAML 1.2
+---
+question:
+  en: What do you want to improve?
+  de: Was möchtest du verbessern?
+in_one_word: 
+  en: Improve Menu
+  de: Verbessern Start Auswahl
+icon: question_answer # widgets menu
+possibleAnswers:
+  edit_infos:
+    inputtype: button
+    icon: edit_location
+    title:
+      en: Edit information
+      de: Infos bearbeiten
+    description:
+      en: I want to contribute my knowledge!
+      de: Ich weiß etwas!
+    followUpQuestions:
+      - website
+      - find_out_more_links
+      - phone
+      - email
+      - wheelchair_accessible
+      - age
+      - audience
+      - opening_hours
+      - opening_date
+      - description
+      - preset
+      - address
+      # - answer_more # Copy everything from answer more into these followUpQuestions.
+  typo:
+    inputtype: button
+    icon: title # short_text
+    title:
+      en: Typo
+      de: Tippfehler
+    description:
+      en: There's a typo in the name or description. # There's a typo in the name but it's otherwise correct.
+      de: Da ist ein Tippfehler im Namen oder Beschreibung.
+    followUpQuestions:
+      - name
+      - description
+      - answer_more
+  wrong_location:
+    inputtype: button
+    icon: pin_drop
+    title:
+      en: Wrong location
+      de: Falscher Ort
+    description:
+      en: The marker is in the wrong place or the address is incorrect.
+      de: Der Marker ist an der falschen Stelle oder die Adresse ist falsch.
+    followUpQuestions:
+      - geo_pos
+      - address
+      - answer_more
+  closed:
+    inputtype: button
+    icon: location_off
+    title:
+      en: Closed
+      de: Geschlossen
+    description:
+      en: This place permanently closed, moved, or was replaced.
+      de: Dieser Ort wurde dauerhaft geschlossen, ist umgezogen oder wurde ersetzt.
+    tags:
+      closed: true
+      published: false
+    followUpQuestions:
+      - closing_date
+      - opening_date
+      - answer_more
+  spam:
+    inputtype: boolean
+    icon: report
+    title:
+      en: Spam
+      de: Spam
+    description:
+      en: It's fake, offensize, or doesn't exist.
+      de: Der Ort ist fake, beleidigend oder existiert nicht.
+    tags:
+      spam: true
+      published: false
+    followUpQuestions:
+      # - spam
+      - answer_more
+...

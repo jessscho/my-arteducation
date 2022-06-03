@@ -1,0 +1,110 @@
+%YAML 1.2
+---
+question:
+  en: Where can somebody find out more?
+  de: Wo kann man mehr erfahren?
+in_one_word: 
+  en: Social Media Links
+  de: Social Media Links
+description:
+  en: Use links if not otherwise specified.
+  de: Verwende Links, sofern nicht anders angegeben.
+icon: link
+possibleAnswers:
+  # input:
+  #   inputtype: text
+  #   parsers:
+  #     - urls
+  #     - socialmedia
+  #     - wikidata
+  #     - wikipedia
+  #   title:
+  #     en: Links to their website, facebook-page, ...
+  #     de: Links zur Webseite, Facebook-Seite, ...
+  # urls:
+  #   hidden: true
+  #   inputtype: text
+  #   tags:
+  #     contact:website: ''
+  #     website: ''
+  #     url: ''
+  facebook:
+    # hidden: true
+    inputtype: text
+    title:
+      en: Facebook
+    tags:
+      contact:facebook: ''
+  instagram:
+    # hidden: true
+    inputtype: text
+    title:
+      en: Instagram
+    tags:
+      contact:instagram: ''
+  twitter:
+    # hidden: true
+    inputtype: text
+    title:
+      en: Twitter
+    tags:
+      contact:twitter: ''
+  youtube:
+    # hidden: true
+    inputtype: text
+    title:
+      en: YouTube
+    tags:
+      contact:youtube: ''
+  # pinterest:
+  #   # hidden: true
+  #   inputtype: text
+  #   title:
+  #     en: Pinterest
+  #   tags:
+  #     contact:pinterest: ''
+  # flickr:
+  #   # hidden: true
+  #   inputtype: text
+  #   title:
+  #     en: Flickr
+  #   tags:
+  #     contact:flickr: ''
+  yelp:
+    # hidden: true
+    inputtype: text
+    title:
+      en: Yelp
+    tags:
+      contact:yelp: ''
+  wikipedia:
+    # hidden: true
+    inputtype: text
+    title:
+      en: Wikipedia ID
+    description:
+      en: Language:Title ; Language:Title ; … # Multiple pages get separated by semicolons." # The language of the wiki, a colon, followed by the title of the page. Multiple pages get separated by semicolons.
+      de: Sprache:Titel ; Sprache:Titel ; …
+    tags:
+      wikipedia: ''
+  wikidata:
+    # hidden: true
+    inputtype: text
+    title:
+      en: Wikidata ID
+    description:
+      en: A "Q" with some numbers behind it. # This is the part after "https://www.wikidata.org/wiki/".
+      de: Ein "Q" mit ein paar Zahlen dahinter.
+    tags:
+      wikidata: ''
+  # osm:
+  #   # hidden: true
+  #   inputtype: text
+  #   title:
+  #     en: OpenStreetMap ID
+  #   description:
+  #     en: The part after "https://osm.org/". # (osm-type/osm-changeset-id)
+  #     de: Der Teil hinter "https://osm.org/".
+  #   tags:
+  #     osm_id: ''
+...

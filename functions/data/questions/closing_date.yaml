@@ -1,0 +1,20 @@
+%YAML 1.2
+---
+question:
+  en: When did this place close permanently?
+  de: Wann wurde dieser Ort geschlossen?
+in_one_word: 
+  en: Closing Date
+  de: Schließungs Datum
+icon: today
+possibleAnswers:
+  closing_date:
+    inputtype: date
+    namespace: closing_date
+    title: 
+      en: Closing Date
+      de: Schließungs Datum
+    description:
+      en: Clear the fields if it's not closed.
+      de: Lösch die Felder, wenn der Ort nicht geschlossen ist.
+...

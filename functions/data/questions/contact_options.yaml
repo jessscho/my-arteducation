@@ -1,0 +1,29 @@
+%YAML 1.2
+---
+question:
+  en: How can this place be contacted?
+  de: Wie kann man diesen Ort kontaktieren?
+in_one_word: 
+  en: Phone and Email
+  de: Telephone und Email
+icon: phone
+possibleAnswers:
+  input:
+    inputtype: text
+    parsers:
+      - phone
+      - email
+    title:
+      en: Phonenumbers and email-addresses
+      de: Gib hier Telephonenummern und Email-Adressen ein...
+  phone:
+    hidden: true
+    inputtype: text
+    tags:
+      contact:phone: ''
+  email:
+    hidden: true
+    inputtype: text
+    tags:
+      contact:email: ''
+...

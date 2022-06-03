@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+question:
+  en: What's its website?
+  de: Wie lautet die Webseite?
+in_one_word: 
+  en: Website
+  de: Webseite
+icon: link
+possibleAnswers:
+  url:
+    inputtype: text
+    title: 
+      en: Link to the webseite
+      de: Link zur Webseite
+    tags:
+      contact:website: ''
+...

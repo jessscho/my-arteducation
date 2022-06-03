@@ -1,0 +1,34 @@
+%YAML 1.2
+---
+question:
+  en: Do want to answer more questions?
+  de: Möchtest du mehr Fragen beantworten?
+in_one_word: 
+  en: More Questions
+  de: Mehr Fragen
+icon: more_horiz
+possibleAnswers:
+  'yes':
+    inputtype: boolean
+    title:
+      en: 'Yes'
+      de: Ja
+    followUpQuestions:
+      - website
+      - find_out_more_links
+      - phone
+      - email
+      - wheelchair_accessible
+      - age
+      - audience
+      - opening_hours
+      - opening_date
+      - preset
+      - address
+      - spam
+  'no':
+    inputtype: boolean
+    title:
+      en: 'No'
+      de: Nein
+...

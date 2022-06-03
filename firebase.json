@@ -1,0 +1,23 @@
+{
+	"functions": {
+		"source": "functions"
+	},
+	"hosting": {
+		// "predeploy": [
+		// 	"yarn build"
+		// ],
+		"public": "./public/",
+		"site": "qiekub-api-backend",
+
+		"rewrites": [
+			{
+				"source": "/graphql/**",
+				"function": "graphql"
+			},
+			{
+				"source": "/auth/**",
+				"function": "auth"
+			}
+		]
+	}
+}
